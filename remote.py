@@ -11,7 +11,7 @@ def touche_prev():
 serial_port = Serial(port='/dev/tty.usbmodem1411', baudrate=9600)
 
 while True:
-  str = serial_port.readline()
+   	str = serial_port.readline()
 	print str
 	if 'next' in str:
 		touche_next()
